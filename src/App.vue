@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-primary min-h-screen bg-light">
     <Header />
     <router-view></router-view>
   </div>
