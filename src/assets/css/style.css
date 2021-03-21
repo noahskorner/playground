@@ -57,11 +57,36 @@
 
 /* Width */
 .max-width-320 {
-    max-width: 320px;
+  max-width: 320px;
 }
 .max-width-480 {
-    max-width: 480px;
+  max-width: 480px;
 }
-.max-width-sm{
-    max-width: 640px;
+.max-width-sm {
+  max-width: 640px;
+}
+
+/* Transitions */
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: 0.5s ease-out;
+}
+
+.slide-left-enter-from {
+  transform: translate(100%, 0);
+}
+.slide-left-leave-to {
+  transform: translate(100%, 0);
+}
+
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: 0.5s ease-out;
+}
+
+.slide-right-enter-from {
+  transform: translate(0%, 0);
+}
+.slide-right-leave-to {
+  transform: translate(100%, 0);
 }

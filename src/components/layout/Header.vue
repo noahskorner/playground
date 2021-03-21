@@ -5,8 +5,14 @@
         <router-link to="/"
           ><div id="logo" class="bg-light-blue"></div
         ></router-link>
+        <IconButton
+          ><template #icon><i class="fas fa-bars fa-lg"></i></template
+        ></IconButton>
       </div>
       <div class="flex justify-around items-center">
+        <IconButton @click="changeTheme()"
+          ><template #icon><i class="fas fa-cloud-moon fa-lg"></i></template
+        ></IconButton>
         <IconButton
           ><template #icon><i class="fas fa-plus fa-lg"></i></template
         ></IconButton>
@@ -21,7 +27,19 @@
 </template>
 
 <script>
-export default {};
+import { reactive } from "vue";
+export default {
+  setup(props, { emit }) {
+    const state = reactive({
+      theme: "light",
+      changeTheme: () => {
+        state.theme = state.theme === "light" ? "dark" : "light";
+        emit("changeTheme", state.theme);
+      },
+    });
+    return state;
+  },
+};
 </script>
 
 <style scoped>
