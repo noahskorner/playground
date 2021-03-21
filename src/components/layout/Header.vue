@@ -2,11 +2,19 @@
   <div id="nav" class="w-screen text-md">
     <div class="h-full flex justify-between items-center mx-4">
       <div class="flex flex-row justify-around items-center">
-        <router-link to="/"><div id="logo"></div></router-link>
+        <router-link to="/"
+          ><div id="logo" class="bg-light-blue"></div
+        ></router-link>
       </div>
       <div class="flex justify-around items-center">
-        <router-link to="/profile">Profile</router-link>
-        <p>New Post</p>
+        <IconButton
+          ><template #icon><i class="fas fa-plus fa-lg"></i></template
+        ></IconButton>
+        <router-link to="/profile">
+          <IconButton
+            ><template #icon
+              ><i class="fas fa-user fa-lg"></i></template></IconButton
+        ></router-link>
       </div>
     </div>
   </div>
@@ -25,7 +33,5 @@ export default {};
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
-  background: #3b82f6;
-  opacity: 0.5;
 }
 </style>

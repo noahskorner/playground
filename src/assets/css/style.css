@@ -3,30 +3,65 @@
 @tailwind components;
 @tailwind utilities;
 /* Import Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* Import Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
 
 /* CSS Variables **/
 :root {
-    --light: #f8f8ff;
-    --dark: #212121;
-  }
+  --gray-00: #f5f6f7;
+  --gray-05: #f2f3f5;
+  --gray-10: #ebedf0;
+  --gray-20: #dadde1;
+  --gray-25: #ccd0d5;
+  --gray-30: #bec3c9;
+  --gray-45: #8d949e;
+  --gray-70: #606770;
+  --gray-80: #444950;
+  --gray-90: #303338;
+  --gray-100: #1c1e21;
+  --light-blue: #93bbfa;
+  --dark-blue: #0b2545;
+  --shadow-1: rgba(0, 0, 0, 0.1);
+  --shadow-2: rgba(0, 0, 0, 0.2);
+  --shadow-5: rgba(0, 0, 0, 0.5);
+  --shadow-8: rgba(0, 0, 0, 0.8);
+  --shadow-inset: rgba(255, 255, 255, 0.5);
+}
 
+/* Fonts */
 .font-primary {
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .font-secondary {
-    font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-/* -light -dark Light Mode / Dark Mode */
+/* Background Colors */
 .bg-light {
-    background-color: var(--light);
+  background-color: var(--gray-35);
 }
 
 .bg-dark {
-    background-color: var(--dark);
+  background-color: var(--gray-90);
 }
 
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+.bg-dark-blue {
+  background-color: var(--dark-blue);
+}
+
+/* Width */
+.max-width-320 {
+    max-width: 320px;
+}
+.max-width-480 {
+    max-width: 480px;
+}
+.max-width-sm{
+    max-width: 640px;
+}

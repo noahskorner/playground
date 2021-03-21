@@ -1,5 +1,5 @@
 <template>
-  <div class="font-primary min-h-screen bg-light">
+  <div class="font-primary min-h-screen bg-dark relative">
     <Header />
     <router-view></router-view>
   </div>
@@ -19,6 +19,8 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: white;
+}
+button:focus {
+  outline: 0 !important;
 }
 </style>
