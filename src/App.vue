@@ -1,6 +1,7 @@
 <template>
-  <div class="font-primary min-h-screen bg-dark relative">
+  <div class="font-primary min-h-screen bg-light relative">
     <Header />
+    <TextField />
     <router-view></router-view>
   </div>
 </template>
